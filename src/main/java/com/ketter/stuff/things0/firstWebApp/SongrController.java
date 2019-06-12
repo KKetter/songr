@@ -24,7 +24,7 @@ public class SongrController {
         return capitalize;
     }
 
-    @GetMapping("")
+    @GetMapping("reverse?sentence=Hello world")
 
 
 
