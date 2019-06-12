@@ -12,10 +12,18 @@ public class SongrController {
         return "Hello songr!";
     }
 
-    @GetMapping("/hello/{name}")
-    public String songrPersonalHello(@PathVariable String name){
+    @GetMapping("/hello")
+    public String songrHelloWorld(){
         //add parameter for name
-        return "Hello, " + name + ". Welcome to songr";
+        return "Hello ! Welcome to songr";
     }
+    // /hello should be a variable
+    @GetMapping("/capitalize/{inputToCapitalize}")
+    public String songrCapitalize(@PathVariable String inputToCapitalize){
+        String capitalize = inputToCapitalize.toUpperCase();
+        return capitalize;
+    }
+
+
 
 }
