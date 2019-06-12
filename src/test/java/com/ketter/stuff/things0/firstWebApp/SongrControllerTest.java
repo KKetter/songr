@@ -12,4 +12,11 @@ public class SongrControllerTest {
         String capitalize = inputToCapitalize.toUpperCase();
         assertEquals("WOW", capitalize);
     }
+
+    @Test
+    public void songrReverse() {
+        SongrController sc = new SongrController();
+        String inputToReverse = "A B C D E";
+        assertEquals("E D C B A", sc.songrReverse(inputToReverse));
+    }
 }
