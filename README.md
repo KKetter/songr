@@ -34,6 +34,8 @@
       - ```localhost:8080/capitalize/<anyword you want>```
       - ```localhost:8080/reverse?inputToReverse=<multiple words to reverse order go here>```
       - ```localhost:8080/getAllAlbums```
+      - ```localhost:8080/getSong/<song paramater>```
+      - ```localhost:8080/getAlbum/<album paramater>```
     - Post Route Usage - Postman
       - Open Postman
       - Change Request to POST
