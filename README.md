@@ -1,4 +1,4 @@
-# Lab 11: Spring for Full-Stack Web Apps
+# Lab 11,12,13: Spring for Full-Stack Web Apps
 
 ## Description
 - Create a new Spring application. Select Spring Web Starter and Spring Dev Tools as dependencies. This project is designed to create routes and test that functionality of those routes. 
@@ -15,6 +15,10 @@
   - will return to the View all the albums stored in the song psql DB
 - ```@PostMapping("/createAlbum")```
   - route will create an album instance (Note this will not work from your browser - please refer to Directions below)
+- ```@GetMapping("/getSong/{paramater}") ```
+  - route will get all information about one song
+- ```@GetMapping("/getAlbum/{paramater}") ```
+  - will return all information about one album
 
 ## Directions
 - from IntelliJ
