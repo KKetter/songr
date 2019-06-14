@@ -22,11 +22,11 @@ public class AlbumController {
         return "albums";
 
     }
-
-    @GetMapping("/albums/new")
-    public String getAddAlbumForm() {
-        return "AlbumForm";
-    }
+// might use for form implementation tomorrow
+//    @GetMapping("/createAlbumForm")
+//    public String getAddAlbumForm() {
+//        return "AlbumForm";
+//    }
 
     @PostMapping("/createAlbum")
     public RedirectView addAlbum(@RequestParam String title, @RequestParam String artist, @RequestParam int songCount, @RequestParam double length, @RequestParam String imageUrl) {

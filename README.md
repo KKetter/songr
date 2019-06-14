@@ -11,6 +11,10 @@
 - ```@GetMapping("/reverse")```
   - will reverse the words in the sentence
   - in order to see this functionality, you must type ```localhost:8080/reverse?sentence=<put sentence here```>
+- ```@GetMapping("/getAllAlbums")```
+  - will return to the View all the albums stored in the song psql DB
+- ```@PostMapping("/createAlbum")```
+  - route will create an album instance (Note this will not work from your browser - please refer to Directions below)
 
 ## Directions
 - from IntelliJ
@@ -25,3 +29,10 @@
       - ```localhost:8080/hello```
       - ```localhost:8080/capitalize/<anyword you want>```
       - ```localhost:8080/reverse?inputToReverse=<multiple words to reverse order go here>```
+      - ```localhost:8080/getAllAlbums```
+    - Post Route Usage - Postman
+      - Open Postman
+      - Change Request to POST
+      - ```localhost:8080/createAlbum``` in url bar
+      - input appropiate data types/values
+      - updates album should be viewable in output window in postman and at ```localhost:8080/getAllAlbums```
