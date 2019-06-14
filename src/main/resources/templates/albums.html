@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <Title> Songr - Albums</Title>
+</head>
+<body>
+<h1>All the Albums</h1>
+<ul>
+    <li th:each="album : ${listOfAlbums}">
+        <p th:text="${album.title}"></p>
+        <p th:text="${album.artist}"></p>
+        <p th:text="${album.songCount}"></p>
+        <p th:text="${album.length}"></p>
+        <p th:text="${album.imageUrl}"></p>
+    </li>
+</ul>
+
+</body>
+</html>
+
+
